@@ -1,0 +1,75 @@
+body{
+    color:white ;
+    background: grey;
+    margin: 0px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    margin-bottom: 50px;
+}
+
+.header{
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    display: flex;
+    overflow: hidden;
+    border-bottom: solid; color: black;
+    margin: 10px;
+    padding: 15px;
+    
+}
+.header-content{
+    animation: moveHeader 10s linear infinite;
+    font-size: 80px;
+    
+}
+@keyframes moveHeader {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+
+}
+
+.chamada{
+    background: black;
+    padding-bottom: 80px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    margin-right:10%;
+    font-size: 25px;
+    
+}
+
+.cat-videos{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.videos{
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.cat-videos img{
+    opacity:0.5;
+    height: 300px;
+}
+
+.cat-videos img:hover{
+    opacity: 1.0;
+    border: 8px solid rgb(255, 87, 138);
+    
+}
+
+.videos{
+    margin-top: 50px;
+}
